@@ -20,8 +20,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.autocorrectionType = .No
+        textField.sizeToFit()
         textView.sizeToFit()
-        textView.scrollEnabled = true
+//        let fixedWidth = textView.frame.size.width
+//        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
+//        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
+//        var newFrame = textView.frame
+//        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+//        textView.frame = newFrame
+        textView.scrollEnabled = false
         textField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
     }
     

@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,28 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JWa-Ej-8f7">
-                                <rect key="frame" x="10" y="84" width="580" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcY-8e-Uz9">
-                                <rect key="frame" x="10" y="150" width="580" height="434"/>
+                                <rect key="frame" x="10" y="132" width="579" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JWa-Ej-8f7">
+                                <rect key="frame" x="10" y="34" width="580" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.93953696519999996" blue="0.19180063040000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="XcY-8e-Uz9" firstAttribute="top" secondItem="JWa-Ej-8f7" secondAttribute="bottom" constant="36" id="1Om-ot-T6g"/>
-                            <constraint firstItem="XcY-8e-Uz9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="C8S-Xh-SDf"/>
-                            <constraint firstItem="JWa-Ej-8f7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.33" id="Cao-yt-ifo"/>
-                            <constraint firstAttribute="trailing" secondItem="JWa-Ej-8f7" secondAttribute="trailing" constant="10" id="K7X-Cy-zZ9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XcY-8e-Uz9" secondAttribute="bottom" constant="16" id="gj6-Nz-clp"/>
-                            <constraint firstAttribute="trailing" secondItem="XcY-8e-Uz9" secondAttribute="trailing" constant="10" id="shd-cm-oAt"/>
-                            <constraint firstItem="JWa-Ej-8f7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="vkX-bV-M41"/>
+                            <constraint firstItem="JWa-Ej-8f7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="34" id="0Cj-LV-RAA"/>
+                            <constraint firstItem="JWa-Ej-8f7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Nzf-hS-wNk"/>
+                            <constraint firstAttribute="trailing" secondItem="XcY-8e-Uz9" secondAttribute="trailing" constant="11" id="lMg-VV-n1v"/>
+                            <constraint firstItem="XcY-8e-Uz9" firstAttribute="top" secondItem="JWa-Ej-8f7" secondAttribute="bottom" constant="68" id="uA9-3n-QdL"/>
+                            <constraint firstAttribute="trailing" secondItem="JWa-Ej-8f7" secondAttribute="trailing" constant="10" id="ufn-DC-lAO"/>
+                            <constraint firstItem="XcY-8e-Uz9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="yq8-72-LPa"/>
+                            <constraint firstItem="XcY-8e-Uz9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-154" id="zPp-yM-fIh"/>
                         </constraints>
                     </view>
                     <connections>
